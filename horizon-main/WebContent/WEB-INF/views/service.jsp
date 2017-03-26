@@ -287,16 +287,16 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li id="slidebarMenuCompany" class="menuclass" onclick="location.href='<%=request.getContextPath()%>/company'"><a href="#"><i class="fa fa-link"></i> <span>Company</span></a></li>
         <li id="slidebarMenuProduct" class="menuclass" onclick="location.href='<%=request.getContextPath()%>/product'"><a href="#"><i class="fa fa-link"></i> <span>Product</span></a></li>
-      	<li id="slidebarMenuService" class="menuclass" onclick="location.href='<%=request.getContextPath()%>/service'"><a href="#"><i class="fa fa-link"></i> <span>Service</span></a></li>
+        <%-- <li id="slidebarMenuService" class="menuclass" onclick="location.href='<%=request.getContextPath()%>/service'"><a href="#"><i class="fa fa-link"></i> <span>Service</span></a></li>--%>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href="#"><i class="fa fa-link"></i> <span>Service</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+           <li><a href="#" onclick="location.href='<%=request.getContextPath()%>/service'"><i class="fa fa-link"></i>Type</a></li>
+            <li><a href="#" onclick="location.href='<%=request.getContextPath()%>/testreq'"><i class="fa fa-link"></i>Request</a></li>
           </ul>
         </li>
       </ul>

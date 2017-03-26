@@ -520,7 +520,53 @@ function loadProductData(companyID) {
 
 }
 
+/*function loadProductData(companyID){
 
+	 var request = $.ajax({
+		 url: contextPath+"/products/list/"+companyID,
+		  method: "GET",
+		  dataType: 'json'
+
+		}).done(function(res) {
+           if(res.status==="SUCCESS"){
+           	  $.each(res.object, function(idx, obj) {
+           		  $('#companyProductData tbody').append(
+           				  "<tr>" +
+           				  "<td>" +obj.productName+ "</td>" +
+           				  "<td>" +null+ "</td>" +
+           				  "<td>" +obj.productType+ "</td>" +
+           				  "<td>" +obj.lastUpdateTS+ "</td>" +
+           				  "<td>" +null+  "</td>" +
+           				  "</tr>"
+           				  )
+   				});
+           	  producttable = $("#companyProductData").DataTable( {
+           		  	autoWidth: false,
+           	        "columnDefs": [
+           	                       {
+           	                           "targets": [ 0 ],
+           	                           "visible": false,
+           	                           "searchable": false
+           	                       },
+
+           	                       {
+           	                    	   "targets": [ 1 ],
+           	                    	   "className":      'details-control',
+           	                           "orderable":      false,
+           	                           "data":           null,
+           	                           "defaultContent": ''
+           	                       }
+           	                   ]
+
+           	               } );
+           }else{
+           	alert("company retrieve failed");
+           }
+       }).fail(function(data){
+       	alert("company retrieve failed");
+       });
+
+}*/
 
 function addCompanyProducts(products) {
 	var table = $('#companyProductData').DataTable();
@@ -536,6 +582,9 @@ function addCompanyProducts(products) {
 
 		});
 }
+
+
+
 
 
 /*function format ( companyID ) {

@@ -318,13 +318,13 @@ desired effect
         <li id="slidebarMenuCompany" class="active menuclass"><a href="#"><i class="fa fa-link"></i> <span>Company</span></a></li>
         <li id="slidebarMenuService" class="menuclass"><a href="#"><i class="fa fa-link"></i> <span>Service</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href="#"><i class="fa fa-link"></i> <span>Service</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
+            <li ><a href="#">Type</a></li>
             <li><a href="#">Link in level 2</a></li>
           </ul>
         </li>

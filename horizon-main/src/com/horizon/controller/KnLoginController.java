@@ -69,6 +69,18 @@ public class KnLoginController {
 		return model;
 
 	}
+	
+	
+	@RequestMapping(value = {"/testreq" }, method = RequestMethod.GET)
+	public ModelAndView request() {
+		System.out.println("inside request");
+		ModelAndView model = new ModelAndView();
+		model.addObject("title", "Spring Security Custom Login Form");
+		model.addObject("message", "This is request page!");
+		model.setViewName("request");
+		return model;
+
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(@RequestParam(value = "error", required = false) String error,

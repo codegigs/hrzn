@@ -290,5 +290,5 @@ function deleteServiceData(index) {
 
 
 $( window ).load(function() {
-	$('#slidebarMenuService').addClass("active");
+	$('#').addClass("active");
 });
